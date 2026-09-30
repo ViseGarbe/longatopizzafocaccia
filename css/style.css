@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: "DM Sans", sans-serif;
-    background: #f4efe8;
-    color: #181512;
+    background: var(--cream);
+    color: var(--black);
     line-height: 1.5;
 
     min-height: 100vh;
@@ -42,7 +42,26 @@ a {
    VARIABLES
 ========================= */
 
-:root {
+/* Tema scuro*/
+:root { 
+    --orange: #e96924;
+    --orange-dark: #b7341e;
+    --terracotta: #c9954a;
+
+    --cream: #f3e7d7;
+    --cream-dark: #dfd1c0;
+
+    --black: #151210;
+    --grey: #6f675d;
+    --olive: #4e5a38;
+
+    --white: #fff6ea;
+
+    --serif: "Playfair Display", serif;
+}
+
+/* Tema chiaro
+:root { 
     --orange: #d8521c;
     --orange-dark: #ad3d16;
     --terracotta: #b84d2b;
@@ -53,11 +72,12 @@ a {
     --black: #181512;
     --grey: #777069;
 
+
     --white: #fffaf4;
 
     --serif: "Playfair Display", serif;
 }
-
+*/
 
 /* =========================
    GLOBAL
@@ -304,7 +324,7 @@ h2 {
 .intro-copy p {
     font-size: 17px;
     margin-bottom: 25px;
-    color: #57504a;
+    color: var(--grey);
 }
 
 .text-link {
@@ -313,6 +333,7 @@ h2 {
 
     font-size: 13px;
     font-weight: 600;
+    color: var(--olive);
 
     border-bottom: 1px solid;
     padding-bottom: 5px;
@@ -413,7 +434,7 @@ h2 {
     padding: 105px 7vw;
 
     background:
-        linear-gradient(135deg, rgba(216,82,28,.92), rgba(24,21,18,.96)),
+        linear-gradient(135deg, rgba(183,52,30,.9), rgba(21,18,16,.96)),
         url("../img/aperitivo.jpg") center/cover;
     color: white;
 
@@ -436,7 +457,7 @@ h2 {
 }
 
 .promo-card {
-    background: #fffaf4;
+    background: var(--white);
     color: var(--black);
 
     padding: 38px;
@@ -451,7 +472,7 @@ h2 {
     display: inline-flex;
     margin-bottom: 38px;
 
-    color: var(--orange);
+    color: var(--orange-dark);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .16em;
@@ -609,7 +630,7 @@ h2 {
 }
 
 .where-panel {
-    border-top: 1px solid #c9bcb0;
+    border-top: 1px solid rgba(78,90,56,.28);
     padding-top: 34px;
 }
 
@@ -673,11 +694,11 @@ h2 {
     top: 0;
     z-index: 20;
 
-    background: rgba(244,239,232,.94);
+    background: rgba(243,231,215,.94);
     backdrop-filter: blur(10px);
 
-    border-top: 1px solid #d8d0c7;
-    border-bottom: 1px solid #d8d0c7;
+    border-top: 1px solid rgba(78,90,56,.22);
+    border-bottom: 1px solid rgba(78,90,56,.22);
 }
 
 .menu-categories a {
@@ -691,7 +712,7 @@ h2 {
 }
 
 .orange-section {
-    background: var(--orange);
+    background: var(--orange-dark);
     color: white;
 }
 
@@ -824,7 +845,7 @@ h2 {
 
     padding: 30px 0;
 
-    border-top: 1px solid #cfc6bc;
+    border-top: 1px solid rgba(78,90,56,.24);
 }
 
 .values-list article h3 {
@@ -847,7 +868,7 @@ h2 {
 }
 
 .about-split-content {
-    background: var(--orange);
+    background: var(--orange-dark);
     color: white;
 
     padding: 100px 7vw;
@@ -899,7 +920,7 @@ h2 {
 }
 
 .contact-info article {
-    border-top: 1px solid #cbc2b8;
+    border-top: 1px solid rgba(78,90,56,.24);
     padding-top: 25px;
 }
 
@@ -1200,7 +1221,7 @@ h2 {
 
         inset: 75px 0 0;
 
-        background: #181512;
+        background: var(--black);
 
         color: white;
 
