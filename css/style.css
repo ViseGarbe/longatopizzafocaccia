@@ -1214,7 +1214,6 @@ h2 {
 @media (max-width: 850px) {
 
     .desktop-nav.mobile-open {
-
         display: flex;
 
         position: fixed;
@@ -1227,16 +1226,27 @@ h2 {
 
         flex-direction: column;
 
-        padding: 50px 25px;
+        padding: 34px 25px;
 
-        gap: 30px;
+        gap: 18px;
 
-        font-family: "Playfair Display", serif;
-        font-size: 35px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .desktop-nav.mobile-open a {
-        font-size: 35px;
+        padding: 14px 0;
+
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: .02em;
+
+        border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .desktop-nav.mobile-open a.active {
+        color: var(--orange);
     }
 
 }
