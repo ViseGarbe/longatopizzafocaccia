@@ -322,7 +322,7 @@ h2 {
 
 .products {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
     min-height: 650px;
 }
@@ -404,6 +404,79 @@ h2 {
     justify-content: center;
 
     font-size: 22px;
+}
+
+
+/* =========================
+   PROMO
+========================= */
+
+.promo-strip {
+    padding: 105px 7vw;
+
+    background:
+        linear-gradient(135deg, rgba(216,82,28,.92), rgba(24,21,18,.96)),
+        url("../img/aperitivo.jpg") center/cover;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.promo-copy h2 {
+    font-size: clamp(48px, 5.6vw, 88px);
+}
+
+.promo-copy p:not(.eyebrow) {
+    max-width: 560px;
+    margin-top: 30px;
+
+    color: rgba(255,255,255,.76);
+    font-size: 17px;
+}
+
+.promo-card {
+    background: #fffaf4;
+    color: var(--black);
+
+    padding: 38px;
+    max-width: 430px;
+    justify-self: end;
+
+    border-radius: 8px;
+    box-shadow: 0 24px 70px rgba(0,0,0,.28);
+}
+
+.promo-card span {
+    display: inline-flex;
+    margin-bottom: 38px;
+
+    color: var(--orange);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.promo-card h3 {
+    font-family: var(--serif);
+    font-size: clamp(38px, 4vw, 58px);
+    font-weight: 500;
+    line-height: .98;
+}
+
+.promo-card p {
+    margin: 18px 0 32px;
+    color: var(--grey);
+}
+
+.promo-card a {
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 5px;
 }
 
 
@@ -521,6 +594,49 @@ h2 {
 
 .visit h2 {
     margin-bottom: 40px;
+}
+
+
+/* =========================
+   WHERE + GALLERY
+========================= */
+
+.where {
+    display: grid;
+    grid-template-columns: 1fr .78fr;
+    gap: 80px;
+    align-items: end;
+
+    background: var(--cream-dark);
+}
+
+.where-panel {
+    border-top: 1px solid #c9bcb0;
+    padding-top: 34px;
+}
+
+.where-panel p {
+    color: var(--grey);
+    font-size: 18px;
+}
+
+.where-actions {
+    margin-top: 34px;
+
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-row img {
+    height: 340px;
+    object-fit: cover;
 }
 
 
@@ -863,7 +979,7 @@ h2 {
     padding: 70px 7vw 40px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr auto;
 
     align-items: end;
     gap: 40px;
@@ -951,6 +1067,8 @@ h2 {
 
     .intro,
     .feature,
+    .promo-strip,
+    .where,
     .manifesto,
     .values,
     .about-hero,
@@ -973,6 +1091,26 @@ h2 {
 
     .product-card {
         min-height: 480px;
+    }
+
+    .product-content {
+        left: 24px;
+        right: 24px;
+    }
+
+    .product-content h3 {
+        font-size: 42px;
+    }
+
+    .promo-strip {
+        padding: 80px 22px;
+        gap: 42px;
+    }
+
+    .promo-card {
+        max-width: none;
+        justify-self: stretch;
+        padding: 28px;
     }
 
     .feature-image img,
@@ -1038,6 +1176,18 @@ h2 {
 
     .contact-info {
         grid-template-columns: 1fr;
+    }
+
+    .where {
+        gap: 36px;
+    }
+
+    .gallery-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-row img {
+        height: 220px;
     }
 
     .footer {
