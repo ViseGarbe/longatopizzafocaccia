@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (toggle && nav) {
 
+        const closeMobileMenu = () => {
+
+            nav.classList.remove("mobile-open");
+            document.body.classList.remove("menu-open");
+
+        };
+
         toggle.addEventListener("click", () => {
 
             nav.classList.toggle("mobile-open");
@@ -20,12 +27,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
             link.addEventListener("click", () => {
 
-                nav.classList.remove("mobile-open");
-                document.body.classList.remove("menu-open");
+                closeMobileMenu();
 
             });
 
         });
+
+        // Chiude il pannello quando l'utente prova a scorrere la pagina.
+        window.addEventListener("scroll", () => {
+
+            if (nav.classList.contains("mobile-open")) {
+
+                closeMobileMenu();
+
+            }
+
+        }, { passive: true });
+
+        let touchStartY = 0;
+
+        nav.addEventListener("touchstart", event => {
+
+            touchStartY = event.touches[0].clientY;
+
+        }, { passive: true });
+
+        nav.addEventListener("touchmove", event => {
+
+            const touchDistance = Math.abs(event.touches[0].clientY - touchStartY);
+
+            if (touchDistance > 8) {
+
+                closeMobileMenu();
+
+            }
+
+        }, { passive: true });
+
+        nav.addEventListener("wheel", closeMobileMenu, { passive: true });
 
     }
 
