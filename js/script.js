@@ -12,6 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
         toggle.addEventListener("click", () => {
 
             nav.classList.toggle("mobile-open");
+            document.body.classList.toggle("menu-open", nav.classList.contains("mobile-open"));
+
+        });
+
+        nav.querySelectorAll("a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                nav.classList.remove("mobile-open");
+                document.body.classList.remove("menu-open");
+
+            });
 
         });
 

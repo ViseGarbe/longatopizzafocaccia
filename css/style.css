@@ -1213,12 +1213,31 @@ h2 {
 
 @media (max-width: 850px) {
 
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    body.menu-open .header {
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+
+        background: var(--black);
+        color: white;
+    }
+
     .desktop-nav.mobile-open {
         display: flex;
 
         position: fixed;
 
         inset: 75px 0 0;
+        z-index: 9999;
+
+        min-height: calc(100vh - 75px);
+        min-height: calc(100dvh - 75px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
 
         background: var(--black);
 
