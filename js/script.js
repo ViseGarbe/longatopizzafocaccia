@@ -1,6 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /* -------------------------
+       THEME SWITCHER
+    ------------------------- */
+
+    const themeToggle = document.querySelector(".theme-toggle");
+
+    if (themeToggle) {
+
+        const setTheme = theme => {
+
+            const isLight = theme === "light";
+
+            document.documentElement.dataset.theme = isLight ? "light" : "warm";
+            themeToggle.setAttribute("aria-pressed", String(isLight));
+            themeToggle.setAttribute(
+                "aria-label",
+                isLight ? "Attiva palette calda" : "Attiva palette chiara"
+            );
+
+            try {
+
+                localStorage.setItem("longato-theme", isLight ? "light" : "warm");
+
+            } catch (error) {
+
+                // La preferenza resta attiva anche quando lo storage non e disponibile.
+
+            }
+
+        };
+
+        themeToggle.addEventListener("click", () => {
+
+            const nextTheme = document.documentElement.dataset.theme === "light"
+                ? "warm"
+                : "light";
+
+            setTheme(nextTheme);
+
+        });
+
+        setTheme(document.documentElement.dataset.theme === "light" ? "light" : "warm");
+
+    }
+
+    /* -------------------------
        MOBILE NAV
     ------------------------- */
 

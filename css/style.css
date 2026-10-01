@@ -42,7 +42,7 @@ a {
    VARIABLES
 ========================= */
 
-/* Tema scuro*/
+/* Tema scuro */
 :root { 
     --orange: #e96924;
     --orange-dark: #b7341e;
@@ -60,8 +60,8 @@ a {
     --serif: "Playfair Display", serif;
 }
 
-/* Tema chiaro
-:root { 
+/* Tema chiaro */
+:root[data-theme="light"] {
     --orange: #d8521c;
     --orange-dark: #ad3d16;
     --terracotta: #b84d2b;
@@ -71,13 +71,12 @@ a {
 
     --black: #181512;
     --grey: #777069;
-
+    --olive: #59634a;
 
     --white: #fffaf4;
 
     --serif: "Playfair Display", serif;
 }
-*/
 
 /* =========================
    GLOBAL
@@ -179,6 +178,54 @@ h2 {
     border-radius: 100px;
     padding: 12px 20px;
     font-size: 12px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.theme-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    width: 54px;
+    height: 29px;
+    padding: 3px;
+
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--black) 0 50%, var(--cream) 50% 100%);
+    color: inherit;
+    cursor: pointer;
+    transition: border-color .25s ease, transform .25s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.04);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 4px;
+}
+
+.theme-toggle-knob {
+    width: 21px;
+    height: 21px;
+
+    border-radius: 50%;
+    background: var(--orange);
+    box-shadow: 0 1px 4px rgba(0,0,0,.22);
+    transform: translateX(0);
+    transition: transform .25s ease, background-color .25s ease;
+}
+
+:root[data-theme="light"] .theme-toggle-knob {
+    background: var(--orange-dark);
+    transform: translateX(23px);
 }
 
 .menu-toggle {
@@ -989,6 +1036,24 @@ h2 {
     .desktop-nav,
     .nav-cta {
         display: none;
+    }
+
+    .header-actions {
+        gap: 16px;
+    }
+
+    .theme-toggle {
+        width: 48px;
+        height: 27px;
+    }
+
+    .theme-toggle-knob {
+        width: 19px;
+        height: 19px;
+    }
+
+    :root[data-theme="light"] .theme-toggle-knob {
+        transform: translateX(19px);
     }
 
     .menu-toggle {
