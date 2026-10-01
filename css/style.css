@@ -213,19 +213,23 @@ h2 {
 }
 
 .theme-toggle-knob {
-    width: 21px;
-    height: 21px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+
+    width: 15px;
+    height: 15px;
 
     border-radius: 50%;
     background: var(--orange);
     box-shadow: 0 1px 4px rgba(0,0,0,.22);
-    transform: translateX(0);
-    transition: transform .25s ease, background-color .25s ease;
+    transform: translate(-50%, -50%);
+    transition: left .25s ease, background-color .25s ease;
 }
 
 :root[data-theme="light"] .theme-toggle-knob {
     background: var(--orange-dark);
-    transform: translateX(23px);
+    left: 75%;
 }
 
 .menu-toggle {
@@ -1048,12 +1052,12 @@ h2 {
     }
 
     .theme-toggle-knob {
-        width: 19px;
-        height: 19px;
+        width: 14px;
+        height: 14px;
     }
 
     :root[data-theme="light"] .theme-toggle-knob {
-        transform: translateX(19px);
+        left: 75%;
     }
 
     .menu-toggle {
