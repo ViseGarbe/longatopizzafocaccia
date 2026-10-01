@@ -89,28 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }, { passive: true });
 
-        let touchStartY = 0;
-
-        nav.addEventListener("touchstart", event => {
-
-            touchStartY = event.touches[0].clientY;
-
-        }, { passive: true });
-
-        nav.addEventListener("touchmove", event => {
-
-            const touchDistance = Math.abs(event.touches[0].clientY - touchStartY);
-
-            if (touchDistance > 8) {
-
-                closeMobileMenu();
-
-            }
-
-        }, { passive: true });
-
-        nav.addEventListener("wheel", closeMobileMenu, { passive: true });
-
     }
 
 
