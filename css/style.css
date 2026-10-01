@@ -162,6 +162,9 @@ h2 {
 .desktop-nav {
     display: flex;
     gap: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .desktop-nav a {
@@ -1318,6 +1321,8 @@ h2 {
         display: flex;
 
         position: fixed;
+        left: 0;
+        transform: none;
 
         inset: 75px 0 0;
         z-index: 9999;
