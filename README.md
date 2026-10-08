@@ -12,6 +12,7 @@ Il progetto presenta una veste calda, artigianale e contemporanea, con accenti p
 ├── menu.html
 ├── chi-siamo.html
 ├── contatti.html
+├── privacy.html
 ├── css/
 │   └── style.css
 ├── js/
@@ -31,6 +32,7 @@ Il progetto presenta una veste calda, artigianale e contemporanea, con accenti p
 - `menu.html`: menu diviso per categorie.
 - `chi-siamo.html`: racconto del locale e valori.
 - `contatti.html`: indirizzo, link Maps e Instagram.
+- `privacy.html`: privacy policy, cookie policy e note legali del sito.
 
 ## Come aprirlo
 
