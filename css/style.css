@@ -1534,9 +1534,17 @@ h2 {
     .product-card.orange-card .offer-slide {
         padding: 30px 24px;
         background-image: linear-gradient(0deg, rgba(0,0,0,.72), rgba(0,0,0,0) 72%), var(--offer-image);
-        background-position: center;
-        background-size: contain;
+        background-position: center top;
+        background-size: 100% auto;
         background-color: var(--cream);
+    }
+
+    .product-card.orange-card .offer-slide::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,.78), transparent 58%);
     }
 
     .product-card.orange-card .offer-slide h3 {
@@ -1640,8 +1648,16 @@ h2 {
     }
 
     .contact-image img {
-        height: 260px;
+        width: calc(100% - 44px);
+        height: auto;
+        min-height: 0;
         padding: 0 22px;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .contact-page .contact-hero {
+        padding-top: 75px;
     }
 
     .manifesto {
