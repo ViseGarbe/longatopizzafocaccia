@@ -1519,7 +1519,7 @@ h2 {
 
     .products {
         grid-template-columns: 1fr;
-        gap: 24px;
+        row-gap: 32px;
     }
 
     .product-card {
@@ -1529,6 +1529,7 @@ h2 {
     .product-card.orange-card {
         aspect-ratio: 1186 / 1440;
         min-height: 0;
+        margin-top: 32px;
         background: var(--cream);
     }
 
