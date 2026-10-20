@@ -1519,6 +1519,7 @@ h2 {
 
     .products {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .product-card {
