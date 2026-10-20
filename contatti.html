@@ -1,145 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contatti | Longato</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="contact-page">
-
-<header class="header header-solid">
-
-    <a href="index.html" class="logo">
+  <body class="contact-page">
+    <header class="header header-solid">
+      <a href="index.html" class="logo">
         <span>LONGATO</span>
         <small>PIZZA E FOCACCIA</small>
-    </a>
+      </a>
 
-    <nav class="desktop-nav">
+      <nav class="desktop-nav">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="chi-siamo.html">Chi siamo</a>
         <a class="active" href="contatti.html">Contatti</a>
-    </nav>
+      </nav>
 
-    <div class="header-actions">
+      <div class="header-actions">
         <a href="menu.html" class="nav-cta">Menu</a>
 
         <button class="menu-toggle" aria-label="Apri menu">
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
         </button>
-    </div>
+      </div>
+    </header>
 
-</header>
+    <main>
+      <section class="contact-hero">
+        <div class="contact-title">
+          <p class="eyebrow">CONTATTI</p>
 
-
-<main>
-
-<section class="contact-hero">
-
-    <div class="contact-title">
-
-        <p class="eyebrow">CONTATTI</p>
-
-        <h1>
-            Ci vediamo<br>
+          <h1>
+            Ci vediamo<br />
             da <em>Longato.</em>
-        </h1>
+          </h1>
+        </div>
 
-    </div>
+        <div class="contact-image">
+          <img src="img/locale.jpg" alt="Longato Padova" />
+        </div>
+      </section>
 
-    <div class="contact-image">
-        <img src="img/locale.jpg"
-             alt="Longato Padova">
-    </div>
+      <section class="contact-info section">
+        <!-- #TODO: Pubblicare recapiti effettivi (ad es. e-mail e telefono) e orari aggiornati; riportare i dati del titolare richiesti nelle informazioni legali. -->
+        <article>
+          <p class="label">DOVE</p>
 
-</section>
-
-
-<section class="contact-info section">
-
-    <!-- #TODO: Pubblicare recapiti effettivi (ad es. e-mail e telefono) e orari aggiornati; riportare i dati del titolare richiesti nelle informazioni legali. -->
-    <article>
-        <p class="label">DOVE</p>
-
-        <h3>
-            Via Roma, 53<br>
+          <h3>
+            Via Roma, 53<br />
             Padova
-        </h3>
+          </h3>
 
-        <a href="https://maps.app.goo.gl/9pMZTGRvnbkWnpCZ8"
-           target="_blank"
-           rel="noopener"
-           class="text-link">
-            Indicazioni stradali ↗
-        </a>
-    </article>
+          <a
+            href="https://maps.app.goo.gl/9pMZTGRvnbkWnpCZ8"
+            target="_blank"
+            rel="noopener"
+            class="text-link"
+          >
+            Indicazioni stradali
+            <span class="arrow-mark" aria-hidden="true">&#8599;&#xfe0e;</span>
+          </a>
+        </article>
 
+        <article>
+          <p class="label">CONTATTI</p>
 
-    <article>
-        <p class="label">CONTATTI</p>
+          <h3>Chiamaci</h3>
 
-        <h3>
-            Chiamaci
-        </h3>
+          <a href="tel:+393357919634" class="text-link"> 335 791 9634 </a>
+          <!-- # TODO: inserire email -->
+          <p class="contact-email">[email]</p>
+        </article>
 
-        <a href="tel:+393357919634" class="text-link">
-            335 791 9634
-        </a>
-        <!-- # TODO: inserire email -->
-        <p class="contact-email">[email]</p>
-    </article>
+        <article>
+          <p class="label">ORARI</p>
 
+          <h3>Ti aspettiamo</h3>
 
-    <article>
-        <p class="label">ORARI</p>
-
-        <h3>Ti aspettiamo</h3>
-
-        <ul class="opening-hours">
+          <ul class="opening-hours">
             <li><span>Lunedì – venerdì</span><span>10:00–22:30</span></li>
             <li><span>Sabato – domenica</span><span>10:00–23:00</span></li>
-        </ul>
-    </article>
+          </ul>
+        </article>
 
+        <article>
+          <p class="label">SOCIAL</p>
 
-    <article>
-        <p class="label">SOCIAL</p>
-
-        <h3>
-            Seguici su<br>
+          <h3>
+            Seguici su<br />
             Instagram
-        </h3>
+          </h3>
 
-        <a href="https://www.instagram.com/longatopizzafocaccia/"
-           target="_blank"
-           rel="noopener"
-           class="text-link">
-            @longatopizzafocaccia ↗
-        </a>
-    </article>
+          <a
+            href="https://www.instagram.com/longatopizzafocaccia/"
+            target="_blank"
+            rel="noopener"
+            class="text-link"
+          >
+            @longatopizzafocaccia
+            <span class="arrow-mark" aria-hidden="true">&#8599;&#xfe0e;</span>
+          </a>
+        </article>
 
+        <article class="contact-brand-info">
+          <p class="label">LONGATO</p>
+          <h3>Pizza e<br />Focaccia</h3>
+          <p class="contact-copyright">© 2026 Longato Pizza e Focaccia</p>
+          <!-- #TODO: Inserire P. IVA -->
+          <p class="contact-vat">[P. IVA]</p>
+          <a href="privacy.html" class="text-link">Privacy e note legali</a>
+        </article>
+      </section>
+    </main>
 
-    <article class="contact-brand-info">
-        <p class="label">LONGATO</p>
-        <h3>Pizza e<br>Focaccia</h3>
-        <p class="contact-copyright">© 2026 Longato Pizza e Focaccia</p>
-        <!-- #TODO: Inserire P. IVA -->
-        <p class="contact-vat">[P. IVA]</p>
-        <a href="privacy.html" class="text-link">Privacy e note legali</a>
-    </article>
-
-</section>
-
-
-</main>
-
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
