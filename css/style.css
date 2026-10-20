@@ -1525,6 +1525,33 @@ h2 {
         min-height: 480px;
     }
 
+    .product-card.orange-card {
+        aspect-ratio: 1186 / 1440;
+        min-height: 0;
+        background: var(--cream);
+    }
+
+    .product-card.orange-card .offer-slide {
+        padding: 30px 24px;
+        background-image: linear-gradient(0deg, rgba(0,0,0,.72), rgba(0,0,0,0) 72%), var(--offer-image);
+        background-position: center;
+        background-size: contain;
+        background-color: var(--cream);
+    }
+
+    .product-card.orange-card .offer-slide h3 {
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+    .product-card.orange-card .offer-slide p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .product-card.orange-card .offer-price {
+        font-size: 30px;
+    }
+
     .product-content {
         left: 24px;
         right: 24px;
