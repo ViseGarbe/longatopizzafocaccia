@@ -41,8 +41,9 @@
     <main>
       <!-- HERO -->
       <section class="hero">
+        <!-- # TODO: Change it--> 
         <img
-          src="img/hero.jpg"
+          src="img/hero.jpg" 
           alt="Pizza e focaccia Longato"
           class="hero-image"
         />
@@ -117,7 +118,10 @@
       <!-- PRODUCTS -->
       <section class="products">
         <a href="menu.html" class="product-card large">
-          <img src="img/pizza.jpg" alt="Pizza Longato" />
+          <img
+            src="img/pizza-al-banco.jpg"
+            alt="Pizza in teglia esposta al banco Longato"
+          />
 
           <div class="product-overlay"></div>
 
@@ -128,7 +132,7 @@
         </a>
 
         <a href="menu.html" class="product-card">
-          <img src="img/focaccia.jpg" alt="Focaccia Longato" />
+          <img src="img/focaccia.jpg" alt="Pizza e focacce esposte al banco Longato" />
 
           <div class="product-overlay"></div>
 
@@ -139,44 +143,67 @@
         </a>
 
         <a href="contatti.html" class="product-card orange-card">
-          <div class="product-content">
-            <h3>Aperitivo</h3>
-            <p>Spritz, birra o bibita con qualcosa di buono sul tavolo.</p>
+          <div class="product-content offer-content" aria-live="polite" aria-atomic="true">
+            <div class="offer-slide is-active" style="--offer-image: url('../img/offerta-menu-pizza.png')">
+              <span class="offer-label">Offerta</span>
+              <h3>Menu Pizza</h3>
+              <p>Pizza a scelta, bibita in lattina e caffè.</p>
+              <strong class="offer-price">€ 8,90</strong>
+            </div>
+            <div class="offer-slide" style="--offer-image: url('../img/offerta-spritz-patate.png')" aria-hidden="true">
+              <span class="offer-label">Offerta aperitivo</span>
+              <h3>Spritz &amp; patate</h3>
+              <p>Uno Spritz con patate fritte.</p>
+              <strong class="offer-price">€ 6,00</strong>
+            </div>
+            <div class="offer-slide" style="--offer-image: url('../img/offerta-spritz-pizza.png')" aria-hidden="true">
+              <span class="offer-label">Offerta aperitivo</span>
+              <h3>Spritz &amp; pizza</h3>
+              <p>Uno Spritz con un trancio di pizza a scelta.</p>
+              <strong class="offer-price">€ 7,90</strong>
+            </div>
+            <div class="offer-slide" style="--offer-image: url('../img/offerta-ichnusa.png')" aria-hidden="true">
+              <span class="offer-label">In omaggio</span>
+              <h3>Birra Ichnusa</h3>
+              <p>Una birra in omaggio ogni due tranci di pizza o focaccia.</p>
+            </div>
+            <button class="offer-nav offer-nav-prev" type="button" aria-label="Offerta precedente">‹</button>
+            <button class="offer-nav offer-nav-next" type="button" aria-label="Offerta successiva">›</button>
           </div>
         </a>
       </section>
 
-      <!-- PROMO 
-    <section class="promo-strip">
+      <!-- PROMO
+        <section class="promo-strip">
 
-        <div class="promo-copy">
-            <p class="eyebrow light">PROMO E APERITIVO</p>
+                <div class="promo-copy">
+                        <p class="eyebrow light">PROMO E APERITIVO</p>
 
-            <h2>
-                Lato social,<br>
-                <em>quando serve.</em>
-            </h2>
+                        <h2>
+                                Lato social,<br>
+                                <em>quando serve.</em>
+                        </h2>
 
-            <p>
-                Offerte, pause pranzo e aperitivi restano visibili
-                in una sezione più vivace, senza togliere forza
-                all'identità calda e premium del sito.
-            </p>
-        </div>
+                        <p>
+                                Offerte, pause pranzo e aperitivi restano visibili
+                                in una sezione più vivace, senza togliere forza
+                                all'identità calda e premium del sito.
+                        </p>
+                </div>
 
-        <div class="promo-card">
-            <span>Promo del mese</span>
-            <h3>Pizza + bibita</h3>
-            <p>Chiedi in negozio le proposte attive della settimana.</p>
-            <a href="https://www.instagram.com/longatopizzafocaccia/"
-               target="_blank"
-               rel="noopener">
-                Seguici su Instagram <span class="arrow-mark" aria-hidden="true">&#8599;&#xfe0e;</span>
-            </a>
-        </div>
+                <div class="promo-card">
+                        <span>Promo del mese</span>
+                        <h3>Pizza + bibita</h3>
+                        <p>Chiedi in negozio le proposte attive della settimana.</p>
+                        <a href="https://www.instagram.com/longatopizzafocaccia/"
+                            target="_blank"
+                        rel="noopener">
+                            Seguici su Instagram <span class="arrow-mark" aria-hidden="true">&#8599;&#xfe0e;</span>
+                        </a>
+                </div>
 
-    </section>
-    -->
+        </section>
+            -->
 
       <!-- FEATURE -->
       <section class="feature section">
@@ -202,80 +229,80 @@
         </div>
       </section>
 
-      <!-- MENU PREVIEW 
-    <section class="menu-preview section-dark">
+      <!-- MENU PREVIEW
+        <section class="menu-preview section-dark">
 
-        <div class="menu-preview-header">
+                <div class="menu-preview-header">
 
-            <div>
-                <p class="eyebrow light">DAL NOSTRO MENU</p>
+                        <div>
+                                <p class="eyebrow light">DAL NOSTRO MENU</p>
 
-                <h2>
-                    Scegli il tuo<br>
-                    <em>preferito.</em>
-                </h2>
-            </div>
+                                <h2>
+                                        Scegli il tuo<br>
+                                        <em>preferito.</em>
+                                </h2>
+                        </div>
 
-            <a href="menu.html" class="button button-outline-light">
-                Menu completo
-            </a>
+                        <a href="menu.html" class="button button-outline-light">
+                                Menu completo
+                        </a>
 
-        </div>
-
-
-        <div class="menu-preview-list">
-
-            <article>
-                <div>
-                    <h4>Margherita</h4>
-                    <p>
-                        San Marzano DOP · mozzarella fior di latte
-                    </p>
                 </div>
 
-                <strong>€ 5,20</strong>
-            </article>
+
+                <div class="menu-preview-list">
+
+                        <article>
+                                <div>
+                                        <h4>Margherita</h4>
+                                        <p>
+                                                San Marzano DOP · mozzarella fior di latte
+                                        </p>
+                                </div>
+
+                                <strong>€ 5,20</strong>
+                        </article>
 
 
-            <article>
-                <div>
-                    <h4>La nostra Diavola</h4>
-                    <p>
-                        Pomodoro · ventricina · 'nduja · pesto di prezzemolo
-                    </p>
+                        <article>
+                                <div>
+                                        <h4>La nostra Diavola</h4>
+                                        <p>
+                                                Pomodoro · ventricina · 'nduja · pesto di prezzemolo
+                                        </p>
+                                </div>
+
+                                <strong>€ 6,50</strong>
+                        </article>
+
+
+                        <article>
+                                <div>
+                                        <h4>Tito Livio</h4>
+                                        <p>
+                                                Crudo di Parma · bufala · pomodoro · basilico
+                                        </p>
+                                </div>
+
+                                <strong>€ 7,50</strong>
+                        </article>
+
+
+                        <article>
+                                <div>
+                                        <h4>Antenore</h4>
+                                        <p>
+                                                Mortadella · stracciatella e ricotta · pistacchio
+                                        </p>
+                                </div>
+
+                                <strong>€ 7,50</strong>
+                        </article>
+
                 </div>
 
-                <strong>€ 6,50</strong>
-            </article>
-
-
-            <article>
-                <div>
-                    <h4>Tito Livio</h4>
-                    <p>
-                        Crudo di Parma · bufala · pomodoro · basilico
-                    </p>
-                </div>
-
-                <strong>€ 7,50</strong>
-            </article>
-
-
-            <article>
-                <div>
-                    <h4>Antenore</h4>
-                    <p>
-                        Mortadella · stracciatella e ricotta · pistacchio
-                    </p>
-                </div>
-
-                <strong>€ 7,50</strong>
-            </article>
-
-        </div>
-
-    </section>
-    -->
+        </section>
+            -->
 
       <!-- WHERE -->
       <section class="where section">
@@ -312,43 +339,44 @@
         </div>
       </section>
 
-    <!-- GALLERY 
-    <section class="gallery-row" aria-label="Gallery Longato">
-        <img src="img/pizza.jpg" alt="Pizza in teglia Longato">
-        <img src="img/focaccia.jpg" alt="Focaccia Longato">
-        <img src="img/aperitivo.jpg" alt="Aperitivo Longato">
-        <img src="img/vetrina.jpg" alt="Longato pizza e focaccia a Padova">
-    </section>
-    -->
+      <!-- GALLERY
+        <section class="gallery-row" aria-label="Gallery Longato">
+                <img src="img/pizza-al-banco.jpg" alt="Pizza in teglia esposta al banco Longato">
+                <img src="img/focaccia.jpg" alt="Pizza e focacce esposte al banco Longato">
+                <img src="img/aperitivo.jpg" alt="Aperitivo Longato">
+                <img src="img/vetrina-esterna.jpg" alt="Vetrina esterna di Longato a Padova">
+        </section>
+            -->
 
-      <!-- CTA 
-    <section class="visit">
+      <!-- CTA
+        <section class="visit">
 
-        <img src="img/locale.jpg"
-             alt="Locale Longato">
+                <img src="img/locale.jpg"
+                alt="Locale Longato">
 
-        <div class="visit-overlay"></div>
+                <div class="visit-overlay"></div>
 
-        <div class="visit-content">
+                <div class="visit-content">
 
-            <p class="eyebrow light">CI VEDIAMO DA LONGATO</p>
+                        <p class="eyebrow light">CI VEDIAMO DA LONGATO</p>
 
-            <h2>
-                Segui il profumo<br>
-                <em>del forno.</em>
-            </h2>
+                        <h2>
+                                Segui il profumo<br>
+                                <em>del forno.</em>
+                        </h2>
 
-            <a href="https://maps.app.goo.gl/9pMZTGRvnbkWnpCZ8"
-               class="button button-primary"
-               target="_blank"
-               rel="noopener">
-                Apri Maps
-            </a>
+                        <a href="https://maps.app.goo.gl/9pMZTGRvnbkWnpCZ8"
+                            class="button button-primary"
+                            target="_blank"
+                        rel="noopener">
+                            Apri Maps
+                        </a>
 
-        </div>
+                </div>
 
-    </section>
-    --></main>
+        </section>
+            -->
+    </main>
 
     <!-- #TODO: Se l'attività ha partita IVA, pubblicarne il numero nella home page; aggiungere qui i dati societari richiesti, se applicabili. -->
     <footer class="footer">
@@ -359,8 +387,7 @@
 
       <div class="footer-meta">
         <p>© 2026 Longato Pizza e Focaccia</p>
-        <!-- #TODO: Inserire P. IVA -->
-        <p>[P. IVA]</p>
+        <p>Rist.Oasi Srl · P. IVA 03464830276</p>
         <a href="privacy.html">Privacy e note legali</a>
       </div>
     </footer>

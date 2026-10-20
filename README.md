@@ -19,10 +19,11 @@ Il progetto presenta una veste calda, artigianale e contemporanea, con accenti p
 │   └── script.js
 └── img/
     ├── hero.jpg
-    ├── pizza.jpg
+    ├── pizza-al-banco.jpg
     ├── focaccia.jpg
     ├── aperitivo.jpg
     ├── locale.jpg
+    ├── vetrina-esterna.jpg
     └── impasto.jpg
 ```
 

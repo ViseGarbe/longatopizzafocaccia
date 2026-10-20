@@ -1,363 +1,540 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Menu | Longato Pizza e Focaccia</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
-<header class="header header-solid">
-
-    <a href="index.html" class="logo">
+  <body>
+    <header class="header header-solid">
+      <a href="index.html" class="logo">
         <span>LONGATO</span>
         <small>PIZZA E FOCACCIA</small>
-    </a>
+      </a>
 
-    <nav class="desktop-nav">
+      <nav class="desktop-nav">
         <a href="index.html">Home</a>
         <a class="active" href="menu.html">Menu</a>
         <a href="chi-siamo.html">Chi siamo</a>
         <a href="contatti.html">Contatti</a>
-    </nav>
+      </nav>
 
-    <div class="header-actions">
+      <div class="header-actions">
         <a href="contatti.html" class="nav-cta">Dove siamo</a>
 
         <button class="menu-toggle" aria-label="Apri menu">
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
         </button>
-    </div>
+      </div>
+    </header>
 
-</header>
+    <main>
+      <section class="page-hero menu-hero">
+        <p class="eyebrow">IL NOSTRO MENU</p>
 
+        <h1>
+          Scegli.<br />
+          Assaggia. <em>Ritorna.</em>
+        </h1>
 
-<main>
+        <p>Pizza in teglia, focacce e proposte preparate ogni giorno.</p>
+      </section>
 
-<section class="page-hero menu-hero">
+      <nav class="menu-categories">
+        <a href="#teglia">In teglia</a>
+        <a href="#farcite">Farcite</a>
+        <a href="#super">Super farcite</a>
+        <a href="#focacce">Focacce</a>
+        <a href="#bevande">Drink e caffetteria</a>
+        <a href="#offerte">Offerte</a>
+        <a href="allergeni.html">Allergeni</a>
+      </nav>
 
-    <p class="eyebrow">IL NOSTRO MENU</p>
+      <section class="food-menu section" id="teglia">
+        <div class="menu-section-title">
+          <h2>Pizze in teglia</h2>
+        </div>
 
-    <h1>
-        Scegli.<br>
-        Assaggia. <em>Ritorna.</em>
-    </h1>
-
-    <p>
-        Pizza in teglia, focacce e proposte preparate
-        ogni giorno.
-    </p>
-
-</section>
-
-
-<nav class="menu-categories">
-    <a href="#teglia">In teglia</a>
-    <a href="#farcite">Farcite</a>
-    <a href="#super">Super farcite</a>
-    <a href="#focacce">Focacce</a>
-    <a href="#bevande">Bevande</a>
-    <a href="allergeni.html">Allergeni</a>
-</nav>
-
-
-<!-- #TODO: Verificare e mantenere aggiornati prezzi e descrizioni commerciali; controllare gli obblighi informativi sugli allergeni per il menu effettivamente offerto. -->
-<section class="food-menu section" id="teglia">
-
-    <div class="menu-section-title">
-        <h2>Pizze in teglia</h2>
-    </div>
-
-    <div class="food-grid">
-
-        <article class="food-item">
+        <div class="food-grid">
+          <article class="food-item">
             <div>
-                <h3>Margherita</h3>
-                <p>
-                    Pomodoro pelato San Marzano DOP
-                    Nocerino Agro Sarnese, mozzarella
-                    fior di latte
-                </p>
+              <h3>Margherita</h3>
+              <p>
+                Pomodoro pelato San Marzano DOP dell'Agro Sarnese-Nocerino,
+                mozzarella fior di latte
+              </p>
+              <p class="food-allergens">Allergeni: [1], [7].</p>
             </div>
-            <strong>€ 5,20</strong>
-        </article>
+            <strong>€ 4,50</strong>
+          </article>
 
-
-        <article class="food-item">
+          <article class="food-item">
             <div>
-                <h3>Marinara sbagliata</h3>
-                <p>
-                    Passata di pomodoro San Marzano DOP,
-                    alici sott'olio, olive e prezzemolo
-                </p>
+              <h3>Marinara sbagliata</h3>
+              <p>
+                Passata di pomodoro San Marzano DOP, alici sott'olio, olive e
+                prezzemolo
+              </p>
+              <p class="food-allergens">Allergeni: [1], [4].</p>
             </div>
-            <strong>€ 5,20</strong>
-        </article>
+            <strong>€ 4,50</strong>
+          </article>
 
-
-        <article class="food-item">
+          <article class="food-item">
             <div>
-                <h3>Bianca melanzane</h3>
-                <p>
-                    Mozzarella fior di latte,
-                    melanzane arrosto e pesto di prezzemolo
-                </p>
+              <h3>Bianca: melanzane e pesto di prezzemolo</h3>
+              <p>
+                Mozzarella fior di latte, melanzane arrosto e pesto di
+                prezzemolo
+              </p>
+              <p class="food-allergens">Allergeni: [1], [7].</p>
             </div>
-            <strong>€ 5,20</strong>
-        </article>
+            <strong>€ 4,50</strong>
+          </article>
+        </div>
+      </section>
 
-    </div>
+      <section class="food-menu section alt" id="farcite">
+        <div class="menu-section-title">
+          <h2>Pizze farcite</h2>
+        </div>
 
-</section>
-
-
-<section class="food-menu section alt" id="farcite">
-
-    <div class="menu-section-title">
-        <h2>Pizze farcite</h2>
-    </div>
-
-    <div class="food-grid">
-
-        <article class="food-item">
+        <div class="food-grid">
+          <article class="food-item">
             <div>
-                <h3>La nostra Diavola</h3>
-                <p>
-                    Passata di pomodoro, ventricina,
-                    'nduja e pesto di prezzemolo
-                </p>
+              <h3>La nostra Diavola</h3>
+              <p>Passata classica, ventricina, 'nduja e prezzemolo</p>
+              <p class="food-allergens">Allergeni: [1].</p>
             </div>
-            <strong>€ 6,50</strong>
-        </article>
+            <strong>€ 5,50</strong>
+          </article>
 
-
-        <article class="food-item">
+          <article class="food-item">
             <div>
-                <h3>La Parmigiana</h3>
-                <p>
-                    Passata di pomodoro,
-                    melanzane arrosto,
-                    Grana Padano e basilico
-                </p>
+              <h3>La Parmigiana</h3>
+              <p>
+                Passata di pomodoro, melanzane arrosto, Grana Padano e basilico
+              </p>
+              <p class="food-allergens">Allergeni: [1], [3], [7].</p>
             </div>
-            <strong>€ 6,50</strong>
-        </article>
+            <strong>€ 5,50</strong>
+          </article>
 
-
-        <article class="food-item">
+          <article class="food-item">
             <div>
-                <h3>Cotto e funghi</h3>
-                <p>
-                    San Marzano, mozzarella,
-                    prosciutto cotto alta qualità
-                    e funghi trifolati
-                </p>
+              <h3>Prosciutto e funghi</h3>
+              <p>
+                Funghi prataioli, prosciutto cotto e mozzarella fior di latte
+              </p>
+              <p class="food-allergens">Allergeni: [1], [7].</p>
             </div>
-            <strong>€ 6,50</strong>
-        </article>
+            <strong>€ 5,50</strong>
+          </article>
 
-    </div>
-
-</section>
-
-
-<section class="food-menu section" id="super">
-
-    <div class="menu-section-title">
-        <h2>Super farcite</h2>
-    </div>
-
-    <div class="food-grid">
-
-        <article class="food-item">
+          <article class="food-item">
             <div>
-                <h3>Polpette e Parmigiano</h3>
-                <p>
-                    Polpette di manzo al sugo,
-                    Grana Padano e basilico
-                </p>
+              <h3>Bianca: frittata di zucchine e salame</h3>
+              <p>
+                Mozzarella fior di latte, zucchine, frittata, salame mantovano e
+                cipolle rosse.
+              </p>
+              <p class="food-allergens">Allergeni: [1], [3], [7].</p>
             </div>
-            <strong>€ 7,50</strong>
-        </article>
+            <strong>€ 5,50</strong>
+          </article>
+        </div>
+      </section>
 
+      <section class="food-menu section" id="super">
+        <div class="menu-section-title">
+          <h2>Super farcite</h2>
+        </div>
 
-        <article class="food-item">
+        <div class="food-grid">
+          <article class="food-item">
             <div>
-                <h3>Assoluto di pomodoro</h3>
-                <p>
-                    San Marzano, datterino,
-                    carpaccio e crema di pomodoro arrosto
-                </p>
-            </div>
-            <strong>€ 7,50</strong>
-        </article>
-
-
-        <article class="food-item">
-            <div>
-                <h3>Patate e porchetta</h3>
-                <p>
-                    Patate, mozzarella,
-                    porchetta artigianale e rosmarino
-                </p>
-            </div>
-            <strong>€ 7,50</strong>
-        </article>
-
-    </div>
-
-</section>
-
-
-<section class="food-menu section orange-section" id="focacce">
-
-    <div class="menu-section-title">
-        <h2>Le Focacce</h2>
-    </div>
-
-    <div class="food-grid">
-
-        <article class="food-item">
-            <div>
-                <h3>Tito Livio</h3>
-                <p>
-                    Prosciutto crudo di Parma,
-                    mozzarella di bufala,
-                    pomodoro fresco e basilico
-                </p>
-            </div>
-            <strong>€ 7,50</strong>
-        </article>
-
-
-        <article class="food-item">
-            <div>
-                <h3>Antenore</h3>
-                <p>
-                    Mortadella,
-                    crema di stracciatella e ricotta,
-                    pistacchio
-                </p>
-            </div>
-            <strong>€ 7,50</strong>
-        </article>
-
-
-        <article class="food-item">
-            <div>
-                <h3>Euganea</h3>
-                <p>
-                    Porchetta artigianale,
-                    crema di patate,
-                    cipolle bianche e Grana Padano
-                </p>
-            </div>
-            <strong>€ 7,50</strong>
-        </article>
-
-
-        <article class="food-item">
-            <div>
-                <h3>Piazza dei Signori</h3>
-                <p>
-                    Prosciutto cotto,
-                    crema di patate arrosto e Asiago
-                </p>
+              <h3>Polpette e Parmigiano</h3>
+              <p>Polpette di manzo al sugo, Grana Padano e basilico</p>
+              <p class="food-allergens">Allergeni: [1], [3], [7], [12].</p>
             </div>
             <strong>€ 6,50</strong>
-        </article>
+          </article>
 
-
-        <article class="food-item">
+          <article class="food-item">
             <div>
-                <h3>Piazza delle Erbe</h3>
-                <p>
-                    Zucchine e melanzane,
-                    stracchino, rucola
-                    e pomodoro semidry
-                </p>
+              <h3>Assoluto di pomodoro</h3>
+              <p>
+                Pomodori San Marzano e datterini, basilico e crema di datterini
+                arrosto
+              </p>
+              <p class="food-allergens">Allergeni: [1].</p>
             </div>
+            <strong>€ 6,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Bianca: patate, rosmarino e porchetta artigianale</h3>
+              <p>Patate, mozzarella, porchetta artigianale e rosmarino</p>
+              <p class="food-allergens">Allergeni: [1], [7].</p>
+            </div>
+            <strong>€ 6,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Bianca: zucchine e fiori</h3>
+              <p>
+                Zucchine, mozzarella fior di latte, mozzarella di bufala e fiori
+                di zucca.
+              </p>
+              <p class="food-allergens">Allergeni: [1], [7].</p>
+            </div>
+            <strong>€ 6,50</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="food-menu section orange-section" id="focacce">
+        <div class="menu-section-title">
+          <h2>Le Focacce</h2>
+        </div>
+
+        <div class="food-grid">
+          <article class="food-item">
+            <div>
+              <h3>Tito Livio</h3>
+              <p>
+                Passata di pomodoro, mozzarella di bufala, prosciutto crudo e
+                basilico
+              </p>
+              <p class="food-allergens">
+                Allergeni: [1], [7]. <br />Può contenere [3], [6], [10], [11].
+              </p>
+            </div>
+            <strong>€ 6,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Parmigiana</h3>
+              <p>
+                Passata di pomodoro, melanzane, mozzarella di bufala, Grana
+                Padano e basilico.
+              </p>
+              <p class="food-allergens">
+                Allergeni: [1], [3], [7]. <br />Può contenere [6], [10], [11].
+              </p>
+            </div>
+            <strong>€ 5,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Antenore</h3>
+              <p>Mortadella, crema di stracciatella e ricotta, pistacchio</p>
+              <p class="food-allergens">
+                Allergeni: [1], [7], [8]. <br />Può contenere [3], [6], [10],
+                [11].
+              </p>
+            </div>
+            <strong>€ 6,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Euganea</h3>
+              <p>Porchetta artigianale, cipolle, patate e Grana Padano</p>
+              <p class="food-allergens">
+                Allergeni: [1], [3], [7], [9]. <br />Può contenere [6], [10],
+                [11].
+              </p>
+            </div>
+            <strong>€ 6,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Piazza dei Signori</h3>
+              <p>Prosciutto cotto, Asiago e crema di patate con sedano</p>
+              <p class="food-allergens">
+                Allergeni: [1], [7], [9]. <br />Può contenere [3], [6], [10],
+                [11].
+              </p>
+            </div>
+            <strong>€ 5,50</strong>
+          </article>
+
+          <article class="food-item">
+            <div>
+              <h3>Piazza delle Erbe</h3>
+              <p>Zucchine e melanzane, stracchino, rucola e pomodoro semidry</p>
+              <p class="food-allergens">
+                Allergeni: [1], [7]. <br />Può contenere [3], [6], [10], [11].
+              </p>
+            </div>
+            <strong>€ 5,00</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="food-menu section" id="bevande">
+        <div class="menu-section-title">
+          <h2>Drink, birre e caffetteria</h2>
+        </div>
+        <div class="food-grid compact">
+          <h3 class="drink-category">Soft drink</h3>
+          <article class="food-item">
+            <div><h3>Coca Cola</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Coca Cola Zero</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Fanta</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Lemonsoda</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Sprite</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Thè limone</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Thè pesca</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Red Bull</h3></div>
+            <strong>€ 3,50</strong>
+          </article>
+
+          <h3 class="drink-category">Birra</h3>
+          <article class="food-item">
+            <div><h3>Moretti Baffo Oro spina 0,2 l</h3></div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Moretti Baffo Oro spina 0,4 l</h3></div>
             <strong>€ 6,00</strong>
-        </article>
+          </article>
+          <article class="food-item">
+            <div><h3>Moretti IPA OW 0,33 l</h3></div>
+            <strong>€ 4,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Moretti La Bianca 0,33 l</h3></div>
+            <strong>€ 4,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Moretti La Rossa 0,33 l</h3></div>
+            <strong>€ 4,00</strong>
+          </article>
 
-    </div>
+          <h3 class="drink-category">Vino</h3>
+          <article class="food-item">
+            <div><h3>Prosecco 200 ml</h3></div>
+            <strong>€ 4,00</strong>
+          </article>
 
-</section>
-
-
-<section class="food-menu section" id="bevande">
-
-    <div class="menu-section-title">
-        <h2>Bevande</h2>
-    </div>
-
-    <div class="food-grid compact">
-
-        <article class="food-item">
-            <h3>Coca Cola</h3>
+          <h3 class="drink-category">Caffetteria</h3>
+          <article class="food-item">
+            <div><h3>Espresso</h3></div>
+            <strong>€ 1,50</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Decaffeinato</h3></div>
+            <strong>€ 1,60</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Espresso doppio</h3></div>
             <strong>€ 3,00</strong>
-        </article>
-
-        <article class="food-item">
-            <h3>Coca Cola Zero</h3>
-            <strong>€ 3,00</strong>
-        </article>
-
-        <article class="food-item">
-            <h3>Fanta</h3>
-            <strong>€ 3,00</strong>
-        </article>
-
-        <article class="food-item">
-            <h3>Acqua</h3>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Espresso macchiato</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 1,50</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Macchiato decaffeinato</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 1,60</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Cappuccino</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
             <strong>€ 2,00</strong>
-        </article>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Cappuccino decaffeinato</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 2,10</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Ginseng</h3></div>
+            <strong>€ 2,20</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Caffè americano</h3></div>
+            <strong>€ 2,50</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Latte macchiato</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Iced cappuccino</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 3,50</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Iced coffee</h3></div>
+            <strong>€ 3,50</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Matcha latte</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 4,00</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Crema caffè piccola</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 3,00</strong>
+          </article>
+          <article class="food-item">
+            <div>
+              <h3>Crema caffè grande</h3>
+              <p class="food-allergens">Allergeni: [7].</p>
+            </div>
+            <strong>€ 4,00</strong>
+          </article>
 
-    </div>
+          <h3 class="drink-category">Spritz</h3>
+          <article class="food-item">
+            <div><h3>Aperol</h3></div>
+            <strong>€ 4,00</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Campari</h3></div>
+            <strong>€ 4,50</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Sarti Rosa</h3></div>
+            <strong>€ 4,50</strong>
+          </article>
 
-</section>
+          <h3 class="drink-category">Acqua</h3>
+          <article class="food-item">
+            <div><h3>Acqua frizzante</h3></div>
+            <strong>€ 1,50</strong>
+          </article>
+          <article class="food-item">
+            <div><h3>Acqua naturale</h3></div>
+            <strong>€ 1,50</strong>
+          </article>
+        </div>
+      </section>
 
+      <section class="food-menu section offers-section" id="offerte">
+        <div class="menu-section-title">
+          <h2>Le nostre offerte</h2>
+        </div>
 
-<section class="menu-final-cta">
+        <div class="offers-grid">
+          <article class="menu-offer">
+            <div class="offer-copy">
+              <span class="offer-label">Offerta</span>
+              <h3>Menu Pizza</h3>
+              <p>Pizza a scelta, bibita in lattina e caffè.</p>
+            </div>
+            <strong class="offer-price">€ 8,90</strong>
+          </article>
 
-    <p>Hai già scelto?</p>
+          <article class="menu-offer">
+            <div class="offer-copy">
+              <span class="offer-label">Offerta aperitivo</span>
+              <h3>Spritz &amp; patate</h3>
+              <p>Uno Spritz con patate fritte.</p>
+            </div>
+            <strong class="offer-price">€ 6,00</strong>
+          </article>
 
-    <h2>
-        Ti aspettiamo<br>
-        da <em>Longato.</em>
-    </h2>
+          <article class="menu-offer">
+            <div class="offer-copy">
+              <span class="offer-label">Offerta aperitivo</span>
+              <h3>Spritz &amp; pizza</h3>
+              <p>Uno Spritz con un trancio di pizza a scelta.</p>
+            </div>
+            <strong class="offer-price">€ 7,90</strong>
+          </article>
 
-    <a href="contatti.html"
-       class="button button-primary">
-        Vieni a trovarci
-    </a>
+          <article class="menu-offer">
+            <div class="offer-copy">
+              <span class="offer-label">In omaggio</span>
+              <h3>Birra Ichnusa</h3>
+              <p>Una birra in omaggio ogni due tranci di pizza o focaccia.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-</section>
+      <section class="menu-final-cta">
+        <p>Hai già scelto?</p>
 
-</main>
+        <h2>
+          Ti aspettiamo<br />
+          da <em>Longato.</em>
+        </h2>
 
+        <a href="contatti.html" class="button button-primary">
+          Vieni a trovarci
+        </a>
+      </section>
+    </main>
 
-<footer class="footer">
-    <div class="footer-brand">
+    <footer class="footer">
+      <div class="footer-brand">
         <span>LONGATO</span>
         <small>PIZZA E FOCACCIA</small>
-    </div>
+      </div>
 
-    <div class="footer-meta">
+      <div class="footer-meta">
         <p>© 2026 Longato Pizza e Focaccia</p>
-        <!-- #TODO: Inserire P. IVA -->
-        <p>[P. IVA]</p>
+        <p>Rist.Oasi Srl · P. IVA 03464830276</p>
         <a href="privacy.html">Privacy e note legali</a>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

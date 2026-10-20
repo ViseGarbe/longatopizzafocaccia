@@ -103,4 +103,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+
+    /* -------------------------
+       OFFER ROTATOR
+    ------------------------- */
+
+    const offerCard = document.querySelector(".offer-content");
+
+    if (offerCard) {
+
+        const offers = Array.from(offerCard.querySelectorAll(".offer-slide"));
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let activeOffer = 0;
+        let offerTimer;
+
+        const showOffer = (index) => {
+            offers[activeOffer].classList.remove("is-active");
+            offers[activeOffer].setAttribute("aria-hidden", "true");
+            activeOffer = (index + offers.length) % offers.length;
+            offers[activeOffer].classList.add("is-active");
+            offers[activeOffer].setAttribute("aria-hidden", "false");
+        };
+
+        const previous = offerCard.querySelector(".offer-nav-prev");
+        const next = offerCard.querySelector(".offer-nav-next");
+        [previous, next].forEach((button) => button?.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            showOffer(activeOffer + (button === next ? 1 : -1));
+            if (offerTimer) {
+                window.clearInterval(offerTimer);
+                startOfferTimer();
+            }
+        }));
+
+        const startOfferTimer = () => {
+            offerTimer = window.setInterval(() => {
+                showOffer(activeOffer + 1);
+            }, 6000);
+        };
+
+        if (offers.length > 1 && !reduceMotion.matches) {
+            startOfferTimer();
+        }
+
+    }
+
 });

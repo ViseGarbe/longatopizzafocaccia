@@ -384,6 +384,18 @@ h2 {
     line-height: 1;
 }
 
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.instagram-icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+}
+
 
 /* =========================
    PRODUCT CARDS
@@ -452,6 +464,146 @@ h2 {
 
 .orange-card {
     background: var(--orange);
+}
+
+.offer-content {
+    inset: 0;
+}
+
+.offer-nav {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 50%;
+    background: rgba(0,0,0,.35);
+    color: #fff;
+    font: inherit;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: background .2s ease;
+}
+
+.offer-nav:hover,
+.offer-nav:focus-visible {
+    background: rgba(0,0,0,.7);
+}
+
+.offer-nav-prev { left: 16px; }
+.offer-nav-next { right: 16px; }
+
+.offer-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 45px 40px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,.08) 78%), var(--offer-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity .45s ease, transform .45s ease, visibility .45s ease;
+}
+
+.offer-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.offer-label {
+    margin-bottom: 4px;
+    color: rgba(255,255,255,.78);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.offer-slide h3 {
+    font-size: clamp(36px, 3.8vw, 55px);
+}
+
+.offer-slide p {
+    max-width: 360px;
+    color: rgba(255,255,255,.92);
+}
+
+.offer-price {
+    margin-top: 12px;
+    font-family: var(--serif);
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 80px;
+}
+
+.menu-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 27px 0;
+    color: var(--black);
+    border-top: 1px solid rgba(30,25,20,.2);
+}
+
+.menu-offer h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.menu-offer p {
+    max-width: 480px;
+    color: var(--grey);
+    font-size: 13px;
+}
+
+.offer-copy {
+    max-width: 480px;
+}
+
+.menu-offer .offer-label {
+    display: block;
+    margin: 0 0 7px;
+    color: var(--grey);
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.menu-offer .offer-price {
+    margin: 18px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+@media (max-width: 850px) {
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .offer-slide {
+        transition: none;
+    }
 }
 
 .round-arrow {
@@ -804,6 +956,32 @@ h2 {
     font-size: 13px;
 }
 
+.food-item p.food-allergens {
+    margin-top: 8px;
+    color: var(--black);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.food-allergens strong,
+.offer-allergens strong {
+    font-weight: 700;
+}
+
+.drink-category {
+    grid-column: 1 / -1;
+    padding-top: 28px;
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu-offer .offer-allergens {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
 .orange-section .food-item p {
     color: rgba(255,255,255,.7);
 }
@@ -837,8 +1015,9 @@ h2 {
 .about-hero {
     display: grid;
     grid-template-columns: .85fr 1.15fr;
+    align-items: center;
 
-    min-height: 760px;
+    min-height: 540px;
 }
 
 .about-hero-text {
@@ -854,14 +1033,19 @@ h2 {
 }
 
 .about-hero-image img {
-    height: 100%;
+    display: block;
+    width: 88%;
+    height: 480px;
+    margin: 0 auto;
     object-fit: cover;
+    object-position: 58% center;
 }
 
 .manifesto {
     display: grid;
     grid-template-columns: 1.4fr .8fr;
     gap: 60px;
+    padding-top: 35px;
 }
 
 .manifesto-copy {
@@ -1402,6 +1586,10 @@ h2 {
         grid-template-columns: 1fr;
     }
 
+    .drink-category {
+        grid-column: auto;
+    }
+
     .about-hero-text {
         padding: 90px 22px;
     }
@@ -1415,7 +1603,13 @@ h2 {
     }
 
     .about-hero-image img {
-        height: 500px;
+        width: 88%;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .manifesto {
+        padding-top: 20px;
     }
 
     .contact-image img {
