@@ -45,18 +45,18 @@ a {
 
 /* Tema scuro */
 :root { 
-    --orange: #e96924;
-    --orange-dark: #b7341e;
-    --terracotta: #c9954a;
+    --orange: #a65b3f;
+    --orange-dark: #854631;
+    --terracotta: #8f4b35;
 
-    --cream: #f3e7d7;
-    --cream-dark: #dfd1c0;
+    --cream: #e8dfd3;
+    --cream-dark: #cfc5b9;
 
-    --black: #151210;
-    --grey: #6f675d;
-    --olive: #4e5a38;
+    --black: #211d1b;
+    --grey: #827a73;
+    --olive: #75685c;
 
-    --white: #fff6ea;
+    --white: #f3ede4;
 
     --serif: Georgia, "Times New Roman", serif;
 }
@@ -1648,11 +1648,11 @@ h2 {
     }
 
     .contact-image img {
-        width: calc(100% - 24px);
+        width: 100%;
         height: auto;
         min-height: 0;
-        padding: 0 12px;
-        margin: 0 auto;
+        padding: 0;
+        margin: 0;
         object-fit: contain;
     }
 
