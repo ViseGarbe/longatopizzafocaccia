@@ -1,0 +1,19 @@
+# macOS Finder metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Common build output
+dist/
+build/
+
+# Local editor settings
+.vscode/
+.idea/

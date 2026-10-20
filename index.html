@@ -9,20 +9,6 @@
     <meta name="description"
           content="Longato Pizza Focaccia a Padova. Pizza in teglia, focacce e aperitivi in Via Roma 53, nel cuore della città.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
-          rel="stylesheet">
-
-    <script>
-        try {
-            if (localStorage.getItem("longato-theme") === "light") {
-                document.documentElement.dataset.theme = "light";
-            }
-        } catch (error) {}
-    </script>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -43,10 +29,6 @@
 
     <div class="header-actions">
         <a href="menu.html" class="nav-cta">Scopri il menu</a>
-
-        <button class="theme-toggle" type="button" aria-label="Attiva palette chiara" aria-pressed="false">
-            <span class="theme-toggle-knob" aria-hidden="true"></span>
-        </button>
 
         <button class="menu-toggle" aria-label="Apri menu">
             <span></span>
@@ -111,7 +93,8 @@
 
             <h2>
                 Caldo.<br>
-                Artigianale. <em>Urbano.</em>
+                Artigianale.<br>
+                <em>Urbano.</em>
             </h2>
         </div>
 
@@ -164,23 +147,18 @@
 
 
         <a href="contatti.html" class="product-card orange-card">
-
             <div class="product-content">
                 <h3>Aperitivo</h3>
-
                 <p>
                     Spritz, birra o bibita con qualcosa
                     di buono sul tavolo.
                 </p>
-
-                <div class="round-arrow">↗</div>
             </div>
-
         </a>
 
     </section>
 
-    <!-- PROMO -->
+    <!-- PROMO 
     <section class="promo-strip">
 
         <div class="promo-copy">
@@ -210,7 +188,7 @@
         </div>
 
     </section>
-
+    -->
 
     <!-- FEATURE -->
     <section class="feature section">
@@ -245,7 +223,7 @@
     </section>
 
 
-    <!-- MENU PREVIEW -->
+    <!-- MENU PREVIEW 
     <section class="menu-preview section-dark">
 
         <div class="menu-preview-header">
@@ -318,7 +296,7 @@
         </div>
 
     </section>
-
+    -->
 
     <!-- WHERE -->
     <section class="where section">
@@ -356,16 +334,17 @@
     </section>
 
 
-    <!-- GALLERY -->
+    <!-- GALLERY 
     <section class="gallery-row" aria-label="Gallery Longato">
         <img src="img/pizza.jpg" alt="Pizza in teglia Longato">
         <img src="img/focaccia.jpg" alt="Focaccia Longato">
         <img src="img/aperitivo.jpg" alt="Aperitivo Longato">
         <img src="img/vetrina.jpg" alt="Longato pizza e focaccia a Padova">
     </section>
+    -->
 
 
-    <!-- CTA -->
+    <!-- CTA 
     <section class="visit">
 
         <img src="img/locale.jpg"
@@ -392,10 +371,12 @@
         </div>
 
     </section>
+    -->
 
 </main>
 
 
+<!-- #TODO: Se l'attività ha partita IVA, pubblicarne il numero nella home page; aggiungere qui i dati societari richiesti, se applicabili. -->
 <footer class="footer">
 
     <div class="footer-brand">
@@ -405,6 +386,8 @@
 
     <div class="footer-meta">
         <p>© 2026 Longato Pizza e Focaccia</p>
+        <!-- #TODO: Inserire P. IVA -->
+        <p>[P. IVA]</p>
         <a href="privacy.html">Privacy e note legali</a>
     </div>
 

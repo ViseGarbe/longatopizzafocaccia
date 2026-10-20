@@ -7,20 +7,6 @@
 
     <title>Menu | Longato Pizza e Focaccia</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
-          rel="stylesheet">
-
-    <script>
-        try {
-            if (localStorage.getItem("longato-theme") === "light") {
-                document.documentElement.dataset.theme = "light";
-            }
-        } catch (error) {}
-    </script>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,10 +28,6 @@
 
     <div class="header-actions">
         <a href="contatti.html" class="nav-cta">Dove siamo</a>
-
-        <button class="theme-toggle" type="button" aria-label="Attiva palette chiara" aria-pressed="false">
-            <span class="theme-toggle-knob" aria-hidden="true"></span>
-        </button>
 
         <button class="menu-toggle" aria-label="Apri menu">
             <span></span>
@@ -81,9 +63,11 @@
     <a href="#super">Super farcite</a>
     <a href="#focacce">Focacce</a>
     <a href="#bevande">Bevande</a>
+    <a href="allergeni.html">Allergeni</a>
 </nav>
 
 
+<!-- #TODO: Verificare e mantenere aggiornati prezzi e descrizioni commerciali; controllare gli obblighi informativi sugli allergeni per il menu effettivamente offerto. -->
 <section class="food-menu section" id="teglia">
 
     <div class="menu-section-title">
@@ -367,6 +351,8 @@
 
     <div class="footer-meta">
         <p>© 2026 Longato Pizza e Focaccia</p>
+        <!-- #TODO: Inserire P. IVA -->
+        <p>[P. IVA]</p>
         <a href="privacy.html">Privacy e note legali</a>
     </div>
 </footer>

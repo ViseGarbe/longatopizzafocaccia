@@ -32,6 +32,7 @@ Il progetto presenta una veste calda, artigianale e contemporanea, con accenti p
 - `menu.html`: menu diviso per categorie.
 - `chi-siamo.html`: racconto del locale e valori.
 - `contatti.html`: indirizzo, link Maps e Instagram.
+- `allergeni.html`: elenco generale delle 14 categorie di allergeni previste dal Regolamento (UE) n. 1169/2011.
 - `privacy.html`: privacy policy, cookie policy e note legali del sito.
 
 ## Come aprirlo
