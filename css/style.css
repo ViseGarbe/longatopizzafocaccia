@@ -1648,11 +1648,11 @@ h2 {
     }
 
     .contact-image img {
-        width: 100%;
+        width: calc(100% - 44px);
         height: auto;
         min-height: 0;
         padding: 0;
-        margin: 0;
+        margin: 0 22px;
         object-fit: contain;
     }
 
