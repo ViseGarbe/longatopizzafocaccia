@@ -470,6 +470,17 @@ h2 {
     inset: 0;
 }
 
+.offer-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+}
+
+.offer-link:focus-visible {
+    outline: 3px solid white;
+    outline-offset: -6px;
+}
+
 .offer-nav {
     position: absolute;
     z-index: 2;
@@ -478,9 +489,9 @@ h2 {
     width: 44px;
     height: 44px;
     place-items: center;
-    border: 1px solid rgba(255,255,255,.65);
-    border-radius: 50%;
-    background: rgba(0,0,0,.35);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     color: #fff;
     font: inherit;
     font-size: 32px;
@@ -498,13 +509,15 @@ h2 {
     width: 44px;
     height: 44px;
     padding: 0;
+    border: 1px solid rgba(255,255,255,.65);
     border-radius: 50%;
+    background: rgba(0,0,0,.35);
     transform: none;
 }
 
 .offer-nav-toggle::before {
     content: "";
-    width: 8px;
+    width: 4px;
     height: 16px;
     border-right: 3px solid currentColor;
     border-left: 3px solid currentColor;
@@ -525,8 +538,39 @@ h2 {
     background: rgba(0,0,0,.7);
 }
 
-.offer-nav-prev { left: 16px; }
-.offer-nav-next { right: 16px; }
+.offer-nav-prev,
+.offer-nav-next {
+    width: 32px;
+    height: 44px;
+    background: transparent;
+}
+
+.offer-nav-prev:hover,
+.offer-nav-next:hover,
+.offer-nav-prev:focus-visible,
+.offer-nav-next:focus-visible {
+    background: transparent;
+}
+
+.offer-nav-prev:focus-visible,
+.offer-nav-next:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.offer-nav-prev::before,
+.offer-nav-next::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-top: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+}
+
+.offer-nav-prev::before { transform: rotate(-135deg); }
+.offer-nav-next::before { transform: rotate(45deg); }
+.offer-nav-prev { left: 20px; }
+.offer-nav-next { right: 20px; }
 
 .offer-slide {
     position: absolute;
@@ -660,9 +704,7 @@ h2 {
 .promo-strip {
     padding: 105px 7vw;
 
-    background:
-        linear-gradient(135deg, rgba(183,52,30,.9), rgba(21,18,16,.96)),
-        url("../img/aperitivo.jpg") center/cover;
+    background: linear-gradient(135deg, rgba(183,52,30,.9), rgba(21,18,16,.96));
     color: white;
 
     display: grid;

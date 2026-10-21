@@ -21,7 +21,6 @@ Il progetto presenta una veste calda, artigianale e contemporanea, con accenti p
     ├── hero.jpg
     ├── pizza-al-banco.jpg
     ├── focaccia.jpeg
-    ├── aperitivo.jpg
     ├── locale.jpg
     ├── vetrina-esterna.jpg
     └── impasto.jpg
