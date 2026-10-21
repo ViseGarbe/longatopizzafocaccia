@@ -154,7 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const updateToggle = () => {
             toggle?.setAttribute("aria-pressed", String(isPaused));
             if (toggle) {
-                toggle.textContent = isPaused ? "▶" : "Ⅱ";
                 toggle.setAttribute("aria-label", isPaused ? "Riprendi il carosello" : "Metti in pausa il carosello");
             }
         };
