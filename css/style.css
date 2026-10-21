@@ -504,10 +504,10 @@ h2 {
 
 .offer-nav-toggle::before {
     content: "";
-    width: 12px;
+    width: 8px;
     height: 16px;
-    border-right: 4px solid currentColor;
-    border-left: 4px solid currentColor;
+    border-right: 3px solid currentColor;
+    border-left: 3px solid currentColor;
 }
 
 .offer-nav-toggle[aria-pressed="true"]::before {
