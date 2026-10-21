@@ -540,16 +540,23 @@ h2 {
 
 .offer-nav-prev,
 .offer-nav-next {
-    width: 32px;
+    width: 44px;
     height: 44px;
-    background: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
 }
 
 .offer-nav-prev:hover,
 .offer-nav-next:hover,
 .offer-nav-prev:focus-visible,
 .offer-nav-next:focus-visible {
-    background: transparent;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
 }
 
 .offer-nav-prev:focus-visible,
@@ -561,10 +568,12 @@ h2 {
 .offer-nav-prev::before,
 .offer-nav-next::before {
     content: "";
+    display: block;
     width: 14px;
     height: 14px;
     border-top: 4px solid currentColor;
     border-right: 4px solid currentColor;
+    border-radius: 0;
 }
 
 .offer-nav-prev::before { transform: rotate(-135deg); }
