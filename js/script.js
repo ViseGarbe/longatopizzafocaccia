@@ -9,19 +9,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (toggle && nav) {
 
+        const menuIsOpen = () => nav.classList.contains("mobile-open");
+
+        const updateMenuState = () => {
+            const isOpen = menuIsOpen();
+            toggle.setAttribute("aria-expanded", String(isOpen));
+            toggle.setAttribute("aria-label", isOpen ? "Chiudi menu" : "Apri menu");
+            document.body.classList.toggle("menu-open", isOpen);
+        };
+
         const closeMobileMenu = () => {
-
             nav.classList.remove("mobile-open");
-            document.body.classList.remove("menu-open");
-
+            updateMenuState();
         };
 
         toggle.addEventListener("click", () => {
-
-            nav.classList.toggle("mobile-open");
-            document.body.classList.toggle("menu-open", nav.classList.contains("mobile-open"));
-
+            nav.classList.toggle("mobile-open", !menuIsOpen());
+            updateMenuState();
         });
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape" && menuIsOpen()) {
+                closeMobileMenu();
+                toggle.focus();
+            }
+        });
+
+        updateMenuState();
 
         nav.querySelectorAll("a").forEach(link => {
 
