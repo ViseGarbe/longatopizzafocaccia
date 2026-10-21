@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
         let activeOffer = 0;
         let offerTimer;
+        let isPaused = reduceMotion.matches;
 
         const showOffer = (index) => {
             offers[activeOffer].classList.remove("is-active");
@@ -141,25 +142,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const previous = offerCard.querySelector(".offer-nav-prev");
         const next = offerCard.querySelector(".offer-nav-next");
+        const toggle = offerCard.querySelector(".offer-nav-toggle");
+
+        const stopOfferTimer = () => {
+            if (offerTimer) {
+                window.clearInterval(offerTimer);
+                offerTimer = undefined;
+            }
+        };
+
+        const updateToggle = () => {
+            toggle?.setAttribute("aria-pressed", String(isPaused));
+            if (toggle) {
+                toggle.textContent = isPaused ? "▶" : "Ⅱ";
+                toggle.setAttribute("aria-label", isPaused ? "Riprendi il carosello" : "Metti in pausa il carosello");
+            }
+        };
+
+        const startOfferTimer = () => {
+            stopOfferTimer();
+            if (offers.length > 1 && !isPaused) {
+                offerTimer = window.setInterval(() => {
+                    showOffer(activeOffer + 1);
+                }, 6000);
+            }
+        };
+
         [previous, next].forEach((button) => button?.addEventListener("click", (event) => {
             event.preventDefault();
             event.stopPropagation();
             showOffer(activeOffer + (button === next ? 1 : -1));
-            if (offerTimer) {
-                window.clearInterval(offerTimer);
-                startOfferTimer();
-            }
+            startOfferTimer();
         }));
 
-        const startOfferTimer = () => {
-            offerTimer = window.setInterval(() => {
-                showOffer(activeOffer + 1);
-            }, 6000);
-        };
-
-        if (offers.length > 1 && !reduceMotion.matches) {
+        toggle?.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            isPaused = !isPaused;
+            updateToggle();
             startOfferTimer();
-        }
+        });
+
+        updateToggle();
+        startOfferTimer();
 
     }
 

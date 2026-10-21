@@ -490,6 +490,22 @@ h2 {
     transition: background .2s ease;
 }
 
+.offer-nav-toggle {
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 1;
+    transform: none;
+}
+
+.offer-nav-toggle[aria-pressed="true"] {
+    text-indent: 2px;
+}
+
 .offer-nav:hover,
 .offer-nav:focus-visible {
     background: rgba(0,0,0,.7);
@@ -1539,6 +1555,20 @@ h2 {
         background-position: center top;
         background-size: 100% auto;
         background-color: var(--cream);
+    }
+
+    .product-card.orange-card .offer-nav-toggle {
+        top: 12px;
+        right: 12px;
+        z-index: 3;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .product-card.orange-card .offer-nav-toggle[aria-pressed="true"] {
+        text-indent: 2px;
     }
 
     .product-card.orange-card .offer-slide::before {
