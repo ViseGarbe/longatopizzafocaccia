@@ -1589,10 +1589,25 @@ h2 {
         padding: 0 22px;
     }
 
+    .home-page .header {
+        position: fixed;
+        top: 0;
+        color: #fff;
+        background: rgba(24, 21, 18, .94);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    .home-page .header.scrolled {
+        animation: none;
+    }
+
     .home-page .header .logo {
         color: #fff;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, .7), 0 0 8px rgba(0, 0, 0, .32);
-        -webkit-text-stroke: .15px rgba(35, 27, 21, .45);
+    }
+
+    .home-page .header .menu-toggle span {
+        background: #fff;
     }
 
     .hero {
