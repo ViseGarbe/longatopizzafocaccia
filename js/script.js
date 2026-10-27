@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /* -------------------------
-       MOBILE NAV
+        MOBILE NAV
     ------------------------- */
 
     const toggle = document.querySelector(".menu-toggle");
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* -------------------------
-       HEADER ON SCROLL
+        HEADER ON SCROLL
     ------------------------- */
 
     const header = document.querySelector(".header");
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* -------------------------
-       SIMPLE REVEAL
+        SIMPLE REVEAL
     ------------------------- */
 
     const elements = document.querySelectorAll(
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* -------------------------
-       OFFER ROTATOR
+        OFFER ROTATOR
     ------------------------- */
 
     const offerCard = document.querySelector(".offer-content");

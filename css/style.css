@@ -1,5 +1,5 @@
 /* =========================
-   RESET
+    RESET
 ========================= */
 
 * {
@@ -40,7 +40,7 @@ a {
 
 
 /* =========================
-   VARIABLES
+    VARIABLES
 ========================= */
 
 /* Tema scuro */
@@ -81,7 +81,7 @@ a {
 */
 
 /* =========================
-   GLOBAL
+    GLOBAL
 ========================= */
 
 .section {
@@ -118,7 +118,7 @@ h2 {
 
 
 /* =========================
-   HEADER
+    HEADER
 ========================= */
 
 .header {
@@ -169,9 +169,19 @@ h2 {
     transform: translateX(-50%);
 }
 
+.home-page .desktop-nav {
+    padding: 10px 22px;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 100px;
+    background: rgba(20, 16, 14, .72);
+    color: white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
 .desktop-nav a {
-    font-size: 13px;
-    opacity: .75;
+    font-size: 16px;
+    opacity: .9;
 }
 
 .desktop-nav a:hover,
@@ -184,6 +194,12 @@ h2 {
     border-radius: 100px;
     padding: 12px 20px;
     font-size: 12px;
+}
+
+.home-page .nav-cta {
+    background: rgba(20, 16, 14, .58);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .header-actions {
@@ -225,7 +241,7 @@ h2 {
 
 
 /* =========================
-   BUTTONS
+    BUTTONS
 ========================= */
 
 .button {
@@ -270,7 +286,7 @@ h2 {
 
 
 /* =========================
-   HERO
+    HERO
 ========================= */
 
 .hero {
@@ -353,7 +369,7 @@ h2 {
 
 
 /* =========================
-   INTRO
+    INTRO
 ========================= */
 
 .intro {
@@ -405,7 +421,7 @@ h2 {
 
 
 /* =========================
-   PRODUCT CARDS
+    PRODUCT CARDS
 ========================= */
 
 .products {
@@ -714,7 +730,7 @@ h2 {
 
 
 /* =========================
-   PROMO
+    PROMO
 ========================= */
 
 .promo-strip {
@@ -785,7 +801,7 @@ h2 {
 
 
 /* =========================
-   FEATURE
+    FEATURE
 ========================= */
 
 .feature {
@@ -811,7 +827,7 @@ h2 {
 
 
 /* =========================
-   MENU PREVIEW
+    MENU PREVIEW
 ========================= */
 
 .section-dark {
@@ -861,7 +877,7 @@ h2 {
 
 
 /* =========================
-   VISIT
+    VISIT
 ========================= */
 
 .visit {
@@ -902,7 +918,7 @@ h2 {
 
 
 /* =========================
-   WHERE + GALLERY
+    WHERE + GALLERY
 ========================= */
 
 .where {
@@ -945,7 +961,7 @@ h2 {
 
 
 /* =========================
-   PAGE HERO
+    PAGE HERO
 ========================= */
 
 .page-hero {
@@ -966,7 +982,7 @@ h2 {
 
 
 /* =========================
-   MENU PAGE
+    MENU PAGE
 ========================= */
 
 .menu-categories {
@@ -1097,7 +1113,7 @@ h2 {
 
 
 /* =========================
-   ABOUT
+    ABOUT
 ========================= */
 
 .about-hero {
@@ -1204,7 +1220,7 @@ h2 {
 
 
 /* =========================
-   CONTACT
+    CONTACT
 ========================= */
 
 .contact-hero {
@@ -1303,7 +1319,7 @@ h2 {
 }
 
 /* =========================
-   FOOTER
+    FOOTER
 ========================= */
 
 .footer {
@@ -1512,7 +1528,7 @@ h2 {
 
 
 /* =========================
-   RESPONSIVE
+    RESPONSIVE
 ========================= */
 
 @media (max-width: 850px) {
@@ -1560,13 +1576,19 @@ h2 {
 
     .menu-toggle span {
         width: 26px;
-        height: 1px;
-        background: currentColor;
+        height: 2px;
+        background: var(--black);
     }
 
     .header {
         height: 75px;
         padding: 0 22px;
+    }
+
+    .home-page .header .logo {
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .7), 0 0 8px rgba(0, 0, 0, .32);
+        -webkit-text-stroke: .15px rgba(35, 27, 21, .45);
     }
 
     .hero {
@@ -1901,6 +1923,17 @@ h2 {
     animation: headerDown .3s ease;
 }
 
+@media (min-width: 851px) {
+    .home-page .header.scrolled .desktop-nav {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
 @keyframes headerDown {
 
     from {
@@ -1931,8 +1964,15 @@ h2 {
         color: white;
     }
 
+    body.menu-open .menu-toggle span {
+        background: white;
+    }
+
     .desktop-nav.mobile-open {
         display: flex;
+
+        border: 0;
+        border-radius: 0;
 
         position: fixed;
         left: 0;
