@@ -1580,6 +1580,10 @@ h2 {
         background: var(--black);
     }
 
+    .header.scrolled .menu-toggle span {
+        background: #fff;
+    }
+
     .header {
         height: 75px;
         padding: 0 22px;
